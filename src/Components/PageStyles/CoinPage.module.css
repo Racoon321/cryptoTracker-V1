@@ -1,0 +1,88 @@
+.container {
+  display: flex;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  margin-top: 25px;
+  border-right: 2px solid gray;
+}
+
+.sidearImage {
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.header {
+  font-family: "Montserrat";
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.description {
+  width: 100%;
+  font-family: "Montserrat";
+  padding: 25px;
+  padding-bottom: 15px;
+  padding-top: 0px;
+  text-align: justify;
+}
+
+.marketDataSpan {
+  display: flex;
+}
+
+.coinRank {
+  font-family: "Montserrat";
+}
+
+.linearProgress {
+  color: gold;
+}
+
+.marketData {
+  align-self: start;
+  padding: 25px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.button {
+  width: 100%;
+  height: 40px;
+  background-color: #eebc1d;
+}
+
+@media (max-width: 1220px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+  }
+
+  .marketData {
+    display: flex;
+    justify-content: space-around;
+    align-self: auto;
+  }
+}
+
+@media (max-width: 860px) {
+  .marketData {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 430px) {
+  .marketData {
+    align-items: start;
+  }
+}

@@ -1,0 +1,13 @@
+.logo {
+  color: gold;
+  flex: 1;
+  font-family: "Montserrat";
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.select {
+  width: 100px;
+  height: 40px;
+  margin-right: 15px;
+}
