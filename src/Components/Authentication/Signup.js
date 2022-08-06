@@ -5,7 +5,6 @@ import styles from "./Signup.module.css";
 import CryptoContext from "../../Store/crypto-context";
 import { auth } from "../../firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { useSlotProps } from "@mui/base";
 
 const Signup = (props) => {
   const [email, setEmail] = useState();

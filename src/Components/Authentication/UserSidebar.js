@@ -96,7 +96,7 @@ const UserSidebar = () => {
                   {cryptoCtx.coins.map((coin) => {
                     if (cryptoCtx.watchlist.includes(coin.id)) {
                       return (
-                        <div className={styles.coin}>
+                        <div className={styles.coin} key={coin.id}>
                           <span>{coin.name}</span>
                           <span className={styles.span1}>
                             {cryptoCtx.symbol}

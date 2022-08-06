@@ -12,8 +12,6 @@ const Header = () => {
   const navigate = useNavigate();
   const cryptoCtx = useContext(CryptoContext);
 
-  console.log(cryptoCtx.currency);
-
   const navigateHandler = () => {
     navigate("/");
   };

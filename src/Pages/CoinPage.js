@@ -6,7 +6,6 @@ import axios from "axios";
 import styles from "../Components/PageStyles/CoinPage.module.css";
 import CoinInfo from "../Components/CoinInfo/CoinInfo";
 import { Button, LinearProgress, Typography } from "@mui/material";
-import parse from "html-react-parser";
 import { numberWithCommas } from "../Components/Banner/Carousel";
 import { doc, setDoc } from "firebase/firestore";
 import { db } from "../firebase";
@@ -25,7 +24,6 @@ const CoinPage = () => {
   useEffect(() => {
     fetchCoinData();
   }, [params.coinId]);
-  console.log(coin);
 
   if (!coin) {
     return <LinearProgress className={styles.linearProgress}></LinearProgress>;

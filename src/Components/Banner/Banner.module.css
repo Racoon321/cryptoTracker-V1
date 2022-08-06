@@ -1,5 +1,7 @@
 .banner {
-  background-image: url("../../../public/banner2.jpg");
+  background-image: url("../../../public/banner4.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .bannerContent {
